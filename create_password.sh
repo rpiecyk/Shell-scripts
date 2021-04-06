@@ -20,7 +20,7 @@ done
 # Check if the second argument is correct; generate passwd #
 case "$2" in
                 "sign" ) head /dev/urandom | tr -dc \
-'A-Za-z0-9[~\!@\#\$%^&\*\(\)\-\+\{\}\\\/=]{$2,}."><:;\?|`' | \
+'A-Za-z0-9[~\!@\#\$%^&\*\(\)\-\+\{\}\\\/=]{,}."><:;\?|`' | \
 head -c $1 ; echo ''
 		exit 0
 		;;
